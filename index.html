@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Poppins">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="main.js"></script>
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+  <section>
+    <nav class="navbar  navbar-expand-md bg-light navbar-light ">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">Shortly</a>
+
+      <!-- Toggler/collapsibe Button -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Resources</a>
+          </li>
+          <li class="nav-item login">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item ">
+            <button type="button" class="btn3 signup"></i>Sign Up</button>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+  </section>
+  <section id="second">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-6 col-md-12 ">
+          <h1>More than just shorter links</h1>
+          <p>Build your brand’s recognition and get detailed<br>
+          insights on how your links are performing.</p>
+          <div class="get-started">
+            <button type="button" class="btn2 "></i>Get Started</button>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 illustration-container">
+          <img class="illustration" src="images/illustration-working.svg" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="shorten">
+      <form name="shorten_it_form" class=""  method="post">
+        <input class="bar"  onkeypress="change_color()"  name="shorten_it" id="shorten_btn" type="search" placeholder="Shorten a link here...">
+
+          <button class="btn" type="submit" onclick ="validateForm()"  ></i>Shorten It!</button>
+
+      </form>
+      <p id="alert" style="float:left;margin-left:35px;">
+
+      </p>
+    </div>
+
+  </section>
+  <section id="third">
+    <div class="statistics">
+      <h1>Advanced Statistics</h1>
+      <p>Track how your links are performing across the web with<br>
+      our advanced statistics dashboard.</p>
+    </div>
+  </section>
+  <section>
+    <div class="flex-box">
+      <div class="flex-box1">
+        <div class="circle-container">
+          <img class="brand" src="images/icon-brand-recognition.svg" alt="">
+        </div>
+        <h2>Brand Recognition</h2>
+        <p>Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.</p>
+      </div>
+      <div class="flex-box2">
+        <div class="circle">
+          <div class="circle-container">
+            <img class="detailed-records" src="images/icon-detailed-records.svg" alt="">
+          </div>
+        </div>
+        <h2>Detailed Records</h2>
+        <p>Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+      </div>
+      <div class="flex-box3">
+        <div class="circle-container">
+          <img class="brand" src="images/icon-fully-customizable.svg" alt="">
+        </div>
+        <h2>Fully Customizable</h2>
+        <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+      </div>
+      <div class="line">
+
+      </div>
+  </section>
+  <section>
+    <div class="boost">
+      <h1>Boost your links today</h1>
+      <div class="get-started2">
+        <button type="button" class="btn3 "></i>Get Started</button>
+      </div>
+    </div>
+  </section>
+<section>
+  <div class="flex-container">
+    <div class="flex-item">
+      <h1>Shortly</h1>
+    </div>
+    <div class="flex-item">
+      <ul>
+        <a href="#"><span><h6>Features</h6></span></a>
+        <a href="#"><span><li>Link Shortening</li></span></a>
+        <a href="#"><span><li>Branded Links</li></span></a>
+        <a href="#"><span><li>Analytics</li></span></a>
+
+      </ul>
+    </div>
+    <div class=" flex-item">
+      <ul>
+        <a href="#"><span><h6>Resources</h6></span></a>
+        <a href="#"><span><li>Blog</li></span></a>
+        <a href="#"><span><li>Developers</li></span></a>
+        <a href="#"><span><li>Support</li></span></a>
+
+      </ul>
+    </div>
+    <div class="flex-item">
+      <ul>
+        <a href="#"><span><h6>Company</h6></span></a>
+        <a href="#"><span><li>About</li></span></a>
+        <a href="#"><span><li>Our Team</li></span></a>
+        <a href="#"><span><li>Careers</li></span></a>
+        <a href="#"><span><li>Contact</li></span></a>
+
+      </ul>
+    </div>
+    <div class="flex-icon">
+      <a class="icon" href="https:www.facebook.com/profile.php?id=100021979943275"><i class="social social-icon fab fa-facebook-f"></i></a>
+      <a class="icon" href="https://wwww.instagram.com/etynee_umoh/"><i class="social social-icon fab fa-twitter"></i></a>
+      <a class="icon" href="https://wwww.twitter.com/etynee20/"><i class="social social-icon fab fa-instagram"></i></a>
+
+    </div>
+
+  </div>
+
+  </div>
+  </section>
+</head>
+
+<body>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Eti-ini Umoh</a>.
+  </div>
+</body>
+
+</html>
